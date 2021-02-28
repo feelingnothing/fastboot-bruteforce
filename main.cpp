@@ -49,7 +49,7 @@ int main()
 	if (static_start != 0 ) { start = static_start; }
 
 	unsigned long long int i = 1000000000000000;
-	int long step = sqrt(imei) * 1024;
+	int long long step = sqrt(imei) * 1024;
 	if (start != 0) { i = start; }
 	while(true)
 	{
