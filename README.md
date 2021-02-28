@@ -7,3 +7,7 @@ also, im not cpp developer, im python little boy, if you see anything wrong - po
 
 todo:
 add threads(will be op)
+
+some things i found while making this:
+if you will not reload fastboot rescue mode after another connection with script it will be very slow
+rebooting phone and getting into fastboot mode makes it faster
