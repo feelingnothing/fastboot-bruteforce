@@ -26,9 +26,9 @@ int main()
 {
 	// set them if you dont want to enter imei and start every time and compile it
 	const unsigned long long int static_start = 0;
-	const int static_imei = 0;
+	const long long int static_imei = 0;
 
-	int imei;
+	int long long imei;
 	unsigned long long int start;
 	string cmd = "fastboot oem unlock ";
 	cout << "Hi? So, this script support only devices that are not being reloaded after some tries, this is IMPORTANT\n";
@@ -49,7 +49,7 @@ int main()
 	if (static_start != 0 ) { start = static_start; }
 
 	unsigned long long int i = 1000000000000000;
-	int step = sqrt(imei) * 14;
+	int long step = sqrt(imei) * 14;
 	if (start != 0) { i = start; }
 	while(true)
 	{
