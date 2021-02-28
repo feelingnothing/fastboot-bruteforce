@@ -1,6 +1,7 @@
 #include <iostream>
 #include <math.h>
 #include <string>
+#include <cstring>
 
 using namespace std;
 
@@ -57,7 +58,7 @@ int main()
 		string out = exec(command);
 		cout << to_string(i) + "\n";
 		i += step;
-		if (out.find("wrong") != string::npos) { continue; }
+		if (out.find("wrong") != string::npos && strlen(to_string(i).c_str()) == 16) { continue; }
 		break;
 	}
 	cout << "FOUND IT > " + to_string(i) + "\n";
